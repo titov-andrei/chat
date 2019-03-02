@@ -8,8 +8,10 @@ class Chat
     foreach($tmpLine as $line) {
       $line = rtrim($line);
       if(preg_match('/\A(\S+): (.*)\z/'), $line, $matches) {
-        $headers[$matches[0]] = $matches[1]
+        $headers[$matches[0]] = $matches[1];
       }
     }
+    $key = $headers['Sec-WebSocket-Key'];
+    $sKey = base64_encode(pack('H*'));
   }
 }
