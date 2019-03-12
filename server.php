@@ -13,7 +13,8 @@ socket_bind($socket, 0, PORT);
 socket_listen($socket);
 
 while(true) {
-  $newSocket = socket_accept();
+  $newSocket = socket_accept($socket);
+  $header = socket_read($newSocket);
 }
 
 socket_close($socket);
