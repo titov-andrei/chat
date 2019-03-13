@@ -2,7 +2,7 @@
 
 class Chat
 {
-  public function sendHeaders($headersText, ) {
+  public function sendHeaders($headersText, $newSocket, $host, $port) {
     $headers = array();
     $tmpLine = preg_split("/\r\n/", $headersText);
     foreach($tmpLine as $line) {
