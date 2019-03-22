@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chat</title>
   <link rel="stylesheet" href="style/style.css">
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="script/script.js"></script>
 </head>
 <body>
   <form action="">
@@ -15,5 +13,7 @@
     
     </div>
   </form>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="script/script.js"></script>
 </body>
 </html>
